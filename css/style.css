@@ -8,6 +8,11 @@ h2 {
 
 }
 
+.card-body>img {
+    max-height: 160px;
+    object-fit: cover;
+}
+
 footer {
     background-color: #fff;
 }
@@ -48,9 +53,10 @@ nav {
 }
 
 .splat {
-    top: -140px;
-    height:100px;
-    width: 100px;
+/*    top: -140px;  */
+    min-width: 400px;
+    max-width: 500px;
+/*  transform: rotate(120deg); */
 }
 
 .rewards {
@@ -63,3 +69,9 @@ nav {
     border: 2px solid black;
 }
 
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+}
