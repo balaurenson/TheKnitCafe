@@ -53,10 +53,11 @@ nav {
 }
 
 .splat {
-/*    top: -140px;  */
+    top: 40px;
     min-width: 400px;
     max-width: 500px;
 /*  transform: rotate(120deg); */
+    position: absolute;
 }
 
 .rewards {
@@ -75,3 +76,12 @@ nav {
     background-color: black;
     border-radius: 50%;
 }
+
+/*
+.bk-circle {
+    background-color: white;
+    border-radius: 50%;
+    height: 60px;
+}
+
+*/
