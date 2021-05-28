@@ -5,7 +5,6 @@ body {
 
 h2 {
     font-size: 40px;
-
 }
 
 .card-body>img {
@@ -85,3 +84,8 @@ nav {
 }
 
 */
+
+.card-yarn {
+    background-color: rgb(70, 70, 131);
+    height: 40px;
+}

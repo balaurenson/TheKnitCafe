@@ -5,82 +5,189 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.min.css">  
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">  
         <link rel="stylesheet" href=" https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap">
         <link rel="stylesheet" href="css/style.css">
+    
     
         <title>The Knit Cafe</title>
     </head>
     <body>
-        
-        <header class="jumbotron jumbotron-fluid header-bar">
-      <!--      <div class="row">
-                <div class="col-1">
-                <div class="circle">
-                </div>
-                </div>  -->
-            </div>
-                <div class="row mx-auto">
-                    <div class="col-4 splat">
-                        <img src="image/blob (1).svg">
-                    </div>
-                    <div class="col-xs-5 col-md-3">
-                        <h2>The Knit Cafe</h2>
-                    </div>
-                    <a class="navbar-text ml-auto">
-                        <button class="btn btn-light btn-light-bd rounded-0">Sign in</button>
-                        <a class="btn btn-social-icon" href="#"><i class="fas fa-user-circle fa-2x"></i></a> 
-                        <a class="btn btn-social-icon" href="#"><i class="far fa-question-circle fa-2x"></i></a>
-                    </a>
-                </div>
     
+        <header>
+            <div  class="jumbotron jumbotron-fluid header-bar">
+           <div class="row mx-auto">
+                <div class="col-4 splat">
+                    <img class="p-0" src="image/blobBLA.png">
+                </div>
+                <div class="col-xs-5 col-md-6 ml-auto">
+                    <h2 class="d-none d-md-block">The Knit Cafe</h2>
+                </div>
+                <a class="navbar-text ml-auto">
+                    <button class="btn btn-light btn-light-bd rounded-0 d-none d-md-block">Sign in</button>
+                    <a class="btn d-none d-md-block" href="#"><i class="fas fa-user-circle fa-2x"></i></a> 
+                    <a class="btn  d-none d-md-block bk-circle" href="#"><i class="far fa-question-circle fa-2x"></i></a>
+                </a>
+            </div>
+        </div>
         </header>
     
-        <nav class="navbar navbar-expand-sm">
-            
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a href="" class="nav-link text-light">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="cafeMenu.html" class="nav-link text-light">Cafe Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a href="yarnShop.html" class="nav-link text-light">Yarn Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a href="aboutUs.html" class="nav-link text-light">About Us</a>
-                </li>
-            </ul>   
-        </nav>
-    
-    
-        <footer class=" p-5">
-            <div class="">
-                <div class="">
-                    <div class="row d-flex justify-content-between">
-                        <div class="col-3">
-                            <p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance.</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance.</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. </p>
-                        </div>
-                        <div class="col-3 mr-auto">
-                <!-- text is placeholder until I add icons -->
-                            <a class="btn btn-social-icon" href="#"><i class="fas fa-address-card fa-3x"></i></a>
-                            <a class="btn btn-social-icon" href="http://youtube.com/"><i class="fab fa-youtube-square fa-3x"></i></a>
-                            <a class="btn btn-social-icon" href="http://facebook.com/"><i class="fab fa-facebook-square fa-3x"></i></a>
-                            <a class="btn btn-social-icon" href="http://twitter.com/"><i class="fab fa-twitter-square fa-3x"></i></a>
+        
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand d-md-none text-light" href="#">The Knit Cafe</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarTog" aria-controls="navbarTog" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTog">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link text-light">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cafeMenu.html" class="nav-link text-light">Cafe Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Yarn Shop<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutUs.html" class="nav-link text-light">About Us</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+
+<!--    <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="card card-yarn">
+                        <div class="card-body">
+                            <img class="img-fluid w-100" src="image/yarn.jpg">
                         </div>
                     </div>
                 </div>
+                <div class="col-3">
+                    <div class="card card-yarn">
+                        
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card card-yarn"></div>
+                </div>
+                <div class="col-3">
+                    <div class="card card-yarn"></div>
+                </div>
             </div>
-        </footer>
+          </div>  -->
 
-</body>
-</html>
+
+          <div class="container d-flex flex-wrap p-0 pb-5 pt-5">
+            <div class="row">
+                <div class="card col-3 p-0 border-dark">
+                    <div class="card-body p-0 pt-2">
+                        
+                        <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1563136192-a4b2b5f977e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="">
+                        <p class="card-text"></p>
+                        <h5 class="card-title bg-dark text-light m-0 container-sm">Desert Bloom</h5>
+                        <p class="font-italic">Small-$2. Large-$3</p>
+                    </div>
+                </div>
+    
+                <div class="card col-3 p-0 border-dark">
+                    <div class="card-body p-0 pt-2">
+                        
+                        <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1613505312779-e91c0ff85b64?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">               
+                        <p class="card-text"></p>
+                        <h5 class="card-title bg-dark text-light m-0 container-sm">Skyland</h5>
+                        <p class="font-italic">Small-$3. Large-$4</p>
+                    </div>
+                </div>
+    
+                <div class="card col-3 p-0 border-dark">
+                    <div class="card-body p-0 pt-2">
+                        
+                        <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1563136192-a4b2b5f977e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="">                  
+                        <p class="card-text"></p>
+                        <h5 class="card-title bg-dark text-light m-0 container-sm">Unicorn Solid</h5>
+                        <div>
+                            <label for="colorPicker">Color</label>
+                            <input type="color" id="colorPicker" value="">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card col-3 p-0 border-dark">
+                    <div class="card-body p-0 pt-2">
+                        <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1613505312779-e91c0ff85b64?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">                 
+                        <p class="card-text"></p>
+                        <h5 class="card-title bg-dark text-light m-0 container-sm">Celestial</h5>
+                        <p class="font-italic">Small-$4. Large-$5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </body>
+    
+    <footer> <!--  class="p-2 p-md-5"-->
+        <div class="container pt-4">
+            <div class="row d-flex justify-content-between">
+                <div class="col-3 d-none d-md-block">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="" class="text-dark">Home</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-dark">Cafe Menu</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-dark">Yarn Shop</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-dark">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col col-md-5 d-inline"> 
+        <!-- text is placeholder until I add icons -->
+                    <a class="btn btn-social-icon" href="#"><i class="fas fa-address-card fa-3x"></i></a>
+                    <a class="btn btn-social-icon" href="http://youtube.com/"><i class="fab fa-youtube-square fa-3x"></i></a>
+                    <a class="btn btn-social-icon" href="http://facebook.com/"><i class="fab fa-facebook-square fa-3x"></i></a>
+                    <a class="btn btn-social-icon" href="http://twitter.com/"><i class="fab fa-twitter-square fa-3x"></i></a>
+                </div>
+    
+                <div class="col-3-md d-none d-md-block">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="" class="text-dark">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-dark">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-dark">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-dark">Accessibility</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    </html>
