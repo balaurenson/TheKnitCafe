@@ -3,6 +3,11 @@ body {
     background-color: #eeeeee;
 }
 
+/*.body-main {
+    background-image: url("../image/background.jpg");
+    background-size: cover;
+} */
+
 h2 {
     font-size: 40px;
 }
@@ -31,6 +36,15 @@ nav {
     background-color: #a84c4c;
     border: 3px solid black;
     top: -110px;
+}
+
+.breadcrumb {
+    background-color: #a84c4c;
+    margin: 0px;
+}
+
+.breadcrumb-item {
+    color: white;
 }
 
 .nav-item {
@@ -89,3 +103,9 @@ nav {
     background-color: rgb(70, 70, 131);
     height: 40px;
 }
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px; }
+

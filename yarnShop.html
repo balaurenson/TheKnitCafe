@@ -57,50 +57,94 @@
                 </ul>
             </div>
           </nav>
-
-<!--    <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="card card-yarn">
-                        <div class="card-body">
-                            <img class="img-fluid w-100" src="image/yarn.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card card-yarn">
-                        
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card card-yarn"></div>
-                </div>
-                <div class="col-3">
-                    <div class="card card-yarn"></div>
-                </div>
-            </div>
-          </div>  -->
+          
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item text-reset"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active text-light" aria-current="page">Yarn Shop</li>
+            </ol>
+          </nav>
 
 
           <div class="container d-flex flex-wrap p-0 pb-5 pt-5">
             <div class="row">
                 <div class="card col-3 p-0 border-dark">
                     <div class="card-body p-0 pt-2">
-                        
                         <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1563136192-a4b2b5f977e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="">
                         <p class="card-text"></p>
                         <h5 class="card-title bg-dark text-light m-0 container-sm">Desert Bloom</h5>
-                        <p class="font-italic">Small-$2. Large-$3</p>
+                        <!-- color selector -->
+                        <div class="input-group mb-3 mt-3 col">
+                            <select class="custom-select" id="colorChoice">
+                            <option selected>Color</option>
+                            <option value="1">Green</option>
+                            <option value="2">Blue</option>
+                            <option value="3">Pink</option>
+                            <option value="4">Mauve</option>
+                            </select>
+                        </div>
+                        <!-- Yarn weight selector -->
+                        <div class="input-group mb-3 mt-3 col">
+                            <select class="custom-select" id="colorChoice">
+                            <option selected>Weight</option>
+                            <option value="1">Sock</option>
+                            <option value="2">Worsted</option>
+                            <option value="3">Bulky</option>
+                            </select>
+                        </div>
+                        <!-- Yarn count selector -->
+                        <div class="input-group mb-3 mt-3 col">
+                            <select class="custom-select" id="colorChoice">
+                            <option selected>Count</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="4">5</option>
+                            <option value="4">6</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-dark ml-3 mb-3">Add to cart</button>
                     </div>
                 </div>
     
                 <div class="card col-3 p-0 border-dark">
-                    <div class="card-body p-0 pt-2">
-                        
+                    <div class="card-body p-0 pt-2">   
                         <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1613505312779-e91c0ff85b64?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">               
                         <p class="card-text"></p>
                         <h5 class="card-title bg-dark text-light m-0 container-sm">Skyland</h5>
-                        <p class="font-italic">Small-$3. Large-$4</p>
+                        <!-- color selector -->
+                        <div class="input-group mb-3 mt-3 col">
+                            <select class="custom-select" id="colorChoice">
+                            <option selected>Color</option>
+                            <option value="1">Green</option>
+                            <option value="2">Blue</option>
+                            <option value="3">Pink</option>
+                            <option value="4">Mauve</option>
+                            </select>
+                        </div>
+                        <!-- Yarn weight selector -->
+                        <div class="input-group mb-3 mt-3 col">
+                            <select class="custom-select" id="colorChoice">
+                            <option selected>Weight</option>
+                            <option value="1">Sock</option>
+                            <option value="2">Worsted</option>
+                            <option value="3">Bulky</option>
+                            </select>
+                        </div>
+                        <!-- Yarn count selector -->
+                        <div class="input-group mb-3 mt-3 col">
+                            <select class="custom-select" id="colorChoice">
+                            <option selected>Count</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="4">5</option>
+                            <option value="4">6</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-dark ml-3 mb-3">Add to cart</button>
                     </div>
                 </div>
     
@@ -110,10 +154,38 @@
                         <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1563136192-a4b2b5f977e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="">                  
                         <p class="card-text"></p>
                         <h5 class="card-title bg-dark text-light m-0 container-sm">Unicorn Solid</h5>
-                        <div>
-                            <label for="colorPicker">Color</label>
-                            <input type="color" id="colorPicker" value="">
+                        <!-- color selector -->
+                        <div class="input-group mb-3 mt-3 col">
+                            <select class="custom-select" id="colorChoice">
+                            <option selected>Color</option>
+                            <option value="1">Green</option>
+                            <option value="2">Blue</option>
+                            <option value="3">Pink</option>
+                            <option value="4">Mauve</option>
+                            </select>
                         </div>
+                        <!-- Yarn weight selector -->
+                        <div class="input-group mb-3 mt-3 col">
+                            <select class="custom-select" id="colorChoice">
+                            <option selected>Weight</option>
+                            <option value="1">Sock</option>
+                            <option value="2">Worsted</option>
+                            <option value="3">Bulky</option>
+                            </select>
+                        </div>
+                        <!-- Yarn count selector -->
+                        <div class="input-group mb-3 mt-3 col">
+                            <select class="custom-select" id="colorChoice">
+                            <option selected>Count</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="4">5</option>
+                            <option value="4">6</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-dark ml-3 mb-3">Add to cart</button>
                     </div>
                 </div>
     
@@ -122,7 +194,38 @@
                         <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1613505312779-e91c0ff85b64?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">                 
                         <p class="card-text"></p>
                         <h5 class="card-title bg-dark text-light m-0 container-sm">Celestial</h5>
-                        <p class="font-italic">Small-$4. Large-$5</p>
+                        <!-- color selector -->
+                        <div class="input-group mb-3 mt-3 col">
+                            <select class="custom-select" id="colorChoice">
+                            <option selected>Color</option>
+                            <option value="1">Green</option>
+                            <option value="2">Blue</option>
+                            <option value="3">Pink</option>
+                            <option value="4">Mauve</option>
+                            </select>
+                        </div>
+                        <!-- Yarn weight selector -->
+                        <div class="input-group mb-3 mt-3 col">
+                            <select class="custom-select" id="colorChoice">
+                            <option selected>Weight</option>
+                            <option value="1">Sock</option>
+                            <option value="2">Worsted</option>
+                            <option value="3">Bulky</option>
+                            </select>
+                        </div>
+                        <!-- Yarn count selector -->
+                        <div class="input-group mb-3 mt-3 col">
+                            <select class="custom-select" id="colorChoice">
+                            <option selected>Count</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="4">5</option>
+                            <option value="4">6</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-dark ml-3 mb-3">Add to cart</button>
                     </div>
                 </div>
             </div>
